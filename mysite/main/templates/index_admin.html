@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Quiz App
+{% endblock %}
+
+{% block admin %}
+<a class="me-3 py-2 text-light text-decoration-none px-3" href="/admin">Admin panel</a>
+<a class="me-3 py-2 text-light text-decoration-none px-3" href="/quiz/make">Create question</a>
+{% endblock %}
+
+{% block body %}
+<div class = 'container'>
+  <a class="w-100 btn btn-lg btn-grad" href="/quiz">start the quiz</a>
+</div>
+{% endblock %}

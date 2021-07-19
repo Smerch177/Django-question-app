@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Quiz
+{% endblock %}
+
+{% block body %}
+<div class = 'container'>
+  <form action="/quiz/create" method="POST">{% csrf_token %}
+    <h1>Your question</h1>
+    {{ form }}
+    <button class="w-100 btn btn-lg btn-grad" type="submit">submit</button>
+  </form>
+  <br>
+  <a class="w-100 btn btn-lg btn-grad" href='/quiz_create_random'>Create random questions</a>
+</div>
+{% endblock %}

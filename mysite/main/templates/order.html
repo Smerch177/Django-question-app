@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Оформление покупки
+{% endblock %}
+
+{% block body %}
+<div class = 'container'>
+  <h1>Сумма вашего заказа: {{ data }} <small>/руб</small></h1>
+  <form action="/order/create" method="POST">{% csrf_token %}
+    <input type="hidden" name="hidden_all_info_json" value="{{ data_json }}" id='hidden_all_info_json'>
+    <input type="name" name="name" placeholder="Введите ваше имя"><br><br>
+    <input type="surname" name="surname" placeholder="Введите вашу фамилию"><br><br>
+    <input type="tel" name="tel" placeholder="Введите номер телефона"><br><br>
+    <input type="email" name="email" placeholder="Введите вашу почту"><br><br>
+    <button class="w-100 btn btn-lg btn-grad" type="submit">Оформить заказ</button>
+  </form>
+</div>
+{% endblock %}

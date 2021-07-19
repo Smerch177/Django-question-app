@@ -1,0 +1,363 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-gap: 1vw;
+    grid-auto-rows: 30vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 2vw;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+}
+
+.card {
+    padding: 0;
+    min-height: 300px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+    background-size: cover;
+    border-radius: 0.5vw !important;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0px 0px 1vw rgba(0,0,0,0.7);
+}
+
+html, body {
+    min-height: 100vh;
+    /*background: linear-gradient(#836273, #373252);
+    */
+    background: linear-gradient(#000000, #373252);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form {
+    margin-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: 3%;
+}
+
+body {
+    color: #fff;
+  }
+
+input {
+    border: none;
+    outline: none;
+    height: 2vw;
+    width: 80%;
+    padding-left: 0.5vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+}
+
+.submit-button {
+    margin-left: 1vw;
+    height: 3vw;
+    width: 9vw;
+    border: none;
+    outline: none !important;
+    background-color: #373252;
+    color: white;
+    box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+}
+
+.night {
+    background-image: url("/static/img/night.jpg");
+}
+
+.day {
+    background-image: url("/static/img/day.jpg");
+}
+
+.evening-morning {
+    background-image: url("/static/img/evening-morning.jpg");
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+
+.delete-wrapper {
+    text-align: right;
+    font-size: 1vw;
+    height: 20%;
+    width: 100%;
+    padding-right: 0.5vw;
+    padding-top: 0.4vw;
+}
+
+.degrees {
+    text-align: center;
+    font-size: 2.5vw;
+    height: 10%;
+}
+
+.day > .degrees {
+    color: black;
+}
+
+.state {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.day > .state {
+    color: black;
+}
+
+.city {
+    text-align: center;
+    height: 70%;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 6%;
+}
+
+.day > .state {
+    color: black;
+}
+
+.alert {
+    text-align: center;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 1vw;
+    background-color: #373252;
+    color: white;
+    border: none;
+    padding: 0.5vw;
+    border-radius: 0.4vw;
+    margin-top: -3%;
+}
+
+.celsius {
+    font-size: 1.75vw;
+}
+
+.delete-button {
+    background-color: transparent;
+    width: 1.5vw;
+    height: 1vw;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+}
+
+.day > .delete-wrapper > form > .delete-button {
+    color: black !important;
+}
+
+.delete-button:focus, .delete-button:active {
+    border: none;
+    outline: none;
+}
+
+.bg-my{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.btn-grad {background-image: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.header-h1 h1 {
+position: relative;
+padding-bottom: .5rem;
+font-size: 1.5rem;
+text-transform: uppercase;
+text-align: center;
+/*
+color: #000000;
+*/
+color: #ffffff;
+}
+
+.header-h1 h1::before {
+content: "";
+position: absolute;
+/*
+border-bottom: 2px solid #000000;
+*/
+border-bottom: 2px solid #ffffff;
+bottom: .25rem;
+left: 50%;
+width: 30%;
+transform: translateX(-50%);
+}
+
+.header-h1 h1::after {
+content: "";
+position: absolute;
+/*
+border-bottom: 2px solid #000000;
+*/
+border-bottom: 2px solid #ffffff;
+bottom: 0;
+left: 50%;
+width: 15%;
+transform: translateX(-50%);
+}
+
+.header-h1-left h1 {
+text-align: left;
+}
+
+.header-h1-left h1::before,
+.header-h1-left h1::after {
+left: 0;
+transform: translateX(0);
+}
+
+.header-h1-right h1 {
+text-align: right;
+}
+
+.header-h1-right h1::before,
+.header-h1-right h1::after {
+left: unset;
+right: 0;
+transform: translateX(0);
+}
+
+.header-h2 {
+position: relative;
+text-align: center;
+margin-bottom: .5rem;
+}
+
+.header-h2 h2 {
+position: relative;
+display: inline-block;
+margin-bottom: 0;
+padding: 0.5rem 1rem;
+font-size: 1.25rem;
+text-transform: uppercase;
+}
+
+
+.header-h2 h2::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: -1.125rem;
+transform: translateX(-1.25rem);
+border-top: 1.25rem solid;
+border-left: 1.25rem solid transparent;
+border-right: 1.25rem solid transparent;
+}
+
+.custom-dropdown {
+position: relative;
+display: inline-block;
+vertical-align: middle;
+margin: 10px; /* demo only */
+}
+
+.custom-dropdown select {
+cursor:pointer;
+background-color: #000000;
+color: #fff;
+font-size: inherit;
+padding: .5em;
+padding-right: 2.5em;	
+border: 0;
+margin: 0;
+border-radius: 3px;
+text-indent: 0.01px;
+text-overflow: '';
+-webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+content: "";
+position: absolute;
+pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+content: "\25BC";
+height: 1em;
+font-size: .625em;
+line-height: 1;
+right: 1.2em;
+top: 50%;
+margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+width: 2em;
+right: 0;
+top: 0;
+bottom: 0;
+border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::before {
+background-color: rgba(0,0,0,.15);
+}
+
+.custom-dropdown::after {
+color: rgba(0,0,0,.4);
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+
+  background:-webkit-linear-gradient(0, blue 50%, white 100%);
+}
+
+::-webkit-scrollbar-track {
+  background:  linear-gradient(0deg, #836273 0%, #373252 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

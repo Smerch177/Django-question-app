@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Quiz
+{% endblock %}
+
+{% block body %}
+<div class = 'container'>
+  <form action="/quiz/answer" method="POST">{% csrf_token %}
+    <h1>{{ data.0.quiz }}</h1>
+    <br>
+    <input name='question_0' id='question_0' value='{{ data.0.quiz }}' hidden/>
+    {{ data.0.form }}
+    <h1>{{ data.1.quiz }}</h1>
+    <br>
+    <input name='question_1' id='question_1' value='{{ data.1.quiz }}' hidden/>
+    {{ data.1.form }}
+    <h1>{{ data.2.quiz }}</h1>
+    <br>
+    <input name='question_2' id='question_2' value='{{ data.2.quiz }}' hidden/>
+    {{ data.2.form }}
+    <button class="w-100 btn btn-lg btn-grad" type="submit">submit</button>
+  </form>
+</div>
+{% endblock %}
